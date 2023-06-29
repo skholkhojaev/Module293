@@ -149,6 +149,102 @@ a:visited{
   height: 495px; 
 }
 
+
+.Form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #292f36;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+
+.Form label {
+  font-weight: bold;
+}
+
+.Form input[type="text"],
+.Form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.Form input[type="email"],
+.Form input[type="text"]:focus,
+.Form textarea:focus {
+  outline: none;
+}
+
+.Form input[type="radio"],
+.Form input[type="checkbox"] {
+  display: none;
+}
+
+.Form input[type="radio"] + label,
+.Form input[type="checkbox"] + label {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #292f36;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Form input[type="radio"]:checked + label,
+.Form input[type="checkbox"]:checked + label {
+  background-color: lightpink;
+}
+
+.Form input[type="submit"],
+.Form input[type="reset"] {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: lightpink;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Form input[type="submit"]:hover,
+.Form input[type="reset"]:hover {
+  background-color: lightpink;
+}
+
+.Form textarea {
+  resize: vertical;
+}
+
+/* Additional Batman-themed styling */
+.Form {
+  background-image: url("batman-background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.Form label {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.Form input[type="submit"],
+.Form input[type="reset"] {
+  background-image: linear-gradient(to bottom, lightpink, lightpink);
+  box-shadow: 2px 2px 4px #000000;
+}
+
+.Form input[type="submit"]:hover,
+.Form input[type="reset"]:hover {
+  background-image: linear-gradient(to bottom, lightpink, lightpink);
+  box-shadow: 2px 2px 4px #000000;
+}
+
+
+
 @media screen and (max-width: 900px) {
   main,
   nav,

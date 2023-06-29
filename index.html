@@ -74,7 +74,60 @@
         
       </div>
     </div>
-    <div></div>
+    <div class="Form">
+    
+
+      <form action="https://gibm.becknet.ch/formular/formular.php" method="post" target="blank">
+
+          <div>
+              <h1>Become a Robin to my BatMan UwU</h1><br>
+              <input type="radio" name="anrede" id="frau" value="Frau" checked="checked" required>
+              <label for="frau">Frau</label>
+       
+              <input type="radio" name="anrede" id="herr" value="Herr">
+              <label for="herr">Herr</label>
+
+          </div>
+          
+          <div>
+              <label for="vorname">Vorname *</label><br>
+              <input type="text" id="vorname" name="vorname" minlength="1" maxlength="30" required />
+          </div>
+          
+          <div>
+              <label for="nachname">Nachname *</label><br>
+              <input type="text" id="nachname" name="nachname" minlength="1" maxlength="30" required />
+          </div>
+       
+          <div>
+              <label for="strasse">Strasse</label><br>
+              <input type="text" id="strasse" name="strasse" maxlength="100" required />
+          </div>
+          
+          <div>
+              <label for="email">Email *</label><br>
+              <input type="email" id="email" name="email" maxlength="100" required />
+          </div>
+          
+          <div>
+              <label for="adresse">PLZ */Ort</label><br>
+              <input type="text" id="plz" name="adresse" pattern="[1-9][0-9]{3}" title="PLZ muss zwischen 1000 und 9999 liegen" required  />
+              <input type="text" id="adresse" name="adresse" maxlength="100" required />
+          </div>
+          
+          <div>
+              <label for="nachricht">Nachricht</label><br>
+              <textarea name="nachricht" id="nachricht" cols="30" rows="10" maxlength="100"></textarea>
+          </div>
+          
+          <div>    
+              <input type="submit" value="Senden">    
+              <input type="reset" value="Löschen">    
+          </div>    
+       </form>
+  </div>
+
+
   </footer>
 </body>
 </html>
